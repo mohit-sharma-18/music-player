@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <section>
+        <div class="main">
+            <div class="container">
+                <div class="imageBox"> <i class="fa fa-bars bars"></i>
+                    <img id="imgOne" src="image/habitual.jpg" alt="">
+                    <p class="heading"><i class="fa fa-music NowPlaying"></i>Now playing</p>
+                    <div class="imageBox-2">
+                        <img id="imgTwo" src="image/habitual.jpg" alt="">
+                    </div>
+                </div>
+                <div class="musicInfo">
+                    <p id="album">Change</p>
+                    <p id="title">My Love is Habitual</p>
+                    <p id="artist">justin beiber</p>
+                    <div class="volumecontrols">
+                        <div class="volumeIconBar" id="volumeIconBar">
+                            <i class="fa fa-volume-up volumeIcon" id="volumeIcon"></i>
+                        </div>
+
+                        <div class="volumeSlider volumeHide" id="volumeSlider">
+                            <i class="fa fa-volume-down volume"></i>
+                            <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeId"
+                                class="slider">
+                            <i class="fa fa-volume-up volume"></i>
+                        </div>
+                    </div>
+                </div>
+                <audio src="music/Habitual.mp3"></audio>
+                <div class="progressiveContainer" id="progressiveContainer">
+                    <div class="musicDuration">
+                        <div class="currentTime" id="currentTime">0:00</div>
+                        <i class="fa fa-heart" id="heart"></i>
+                        <div class="duration" id="duration">2:48</div>
+                    </div>
+                    <div class="innerBar" id="innerBar">
+                        <div class="innerProgress" id="innerProgress"></div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <a href=""><i class="fa fa-step-backward " id="buttonPrev"></i></a>
+                    <a href=""><i class="fa fa-play " id="buttonPlay"></i></a>
+                    <a href=""><i class="fa fa-step-forward " id="buttonNext"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="main.js"></script>
+
+</html>
