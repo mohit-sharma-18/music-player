@@ -42,7 +42,7 @@ const pauseMusic = () => {
 
 const songsData = [
     {
-        name: 'Habitual',
+        name: 'habitual',
         album: 'Changes',
         title: 'My Love is Habitual',
         artist: 'Justin beiber',
